@@ -76,7 +76,7 @@
     .square-container1 {
         position: relative;
         width: 100%;
-        padding-bottom: 50% /* Tạo hình vuông dựa trên chiều rộng của col-md-3 */
+        padding-bottom: 50% 
     }
 }
 
