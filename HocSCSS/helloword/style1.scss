@@ -1,0 +1,54 @@
+@import '_variable.scss';
+@import '_header.scss';
+@import '_mixin.scss';
+
+
+section button {
+
+    @include buttonStyle();
+    background: green; //Nó sẽ ghi đè lên background trong buttonStyle();
+}
+
+%buttonStyle {
+    background: $main-color;
+    border: 0;
+    padding: 5px 10px;
+    color: $color-text;
+}
+
+.button1 {
+    @extend %buttonStyle;
+}
+
+.button2 {
+    @extend %buttonStyle;
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// footer button {
+//     @include buttonStyle();
+// }
+
+footer {
+    button {
+        @include buttonStyle();
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+
+// footer button {
+//     background: $main-color;
+//     border: 0;
+//     padding: 5px 10px;
+//     color: $color-text;
+// }

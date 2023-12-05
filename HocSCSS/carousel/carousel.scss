@@ -1,0 +1,48 @@
+$carousel-bg: blue;
+$carousel-text-color: #333;
+$control-button-color: red;
+
+@mixin center-vertically {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel {
+  position: relative;
+  margin-top: 20px;
+  background-color: $carousel-bg;
+  margin-top: 30px;
+
+  .carousel-item {
+    text-align: center;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+ 
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: $control-button-color;
+  }
+
+  .carousel-caption {
+    @include center-vertically;
+    color: $carousel-text-color;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+  }
+}

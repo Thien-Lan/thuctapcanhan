@@ -1,0 +1,41 @@
+.carousel {
+  position: relative;
+  margin-top: 20px;
+  background-color: blue;
+  margin-top: 30px;
+}
+
+.carousel .carousel-item {
+  text-align: center;
+  overflow: hidden;
+}
+
+.carousel .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  width: 5%;
+}
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+  background-color: red;
+}
+
+.carousel .carousel-caption {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #333;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+/*# sourceMappingURL=carousel.css.map */

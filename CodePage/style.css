@@ -1,0 +1,127 @@
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+.circle span {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.circle1 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid orange;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.size{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+@media (min-width: 768px) {
+    .size{
+      font-size: 60px;
+      font-weight: bold;
+    }
+}
+
+.sizeofp{
+    font-size: 20px;
+}
+
+
+
+.square-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* Tạo hình vuông dựa trên chiều rộng của col-md-3 */
+}
+
+.square-container1 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100% /* Tạo hình vuông dựa trên chiều rộng của col-md-3 */
+}
+
+.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+@media (min-width: 768px) {
+    .square-container1 {
+        position: relative;
+        width: 100%;
+        padding-bottom: 50% /* Tạo hình vuông dựa trên chiều rộng của col-md-3 */
+    }
+}
+
+.sizeofbg{
+    font-size: 40px;
+}
+
+@media (min-width: 768px) {
+    .sizeofbg{
+        font-size: 70px;
+    }
+}
+
+.card-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 10px; 
+}
+
+.circle-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; 
+  }
+  
+  .circle-icon span {
+    color: white;
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .hover-orange {
+    border: 1px solid black;
+    background-color: orange;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .hover-orange:hover {
+    background-color: orange; 
+  }
+
+  

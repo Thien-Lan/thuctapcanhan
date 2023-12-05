@@ -1,0 +1,1 @@
+let count2: number = 2002; // tất cả các kiểu dữ liệu int, double, float đều quy về number
